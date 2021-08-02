@@ -1,4 +1,4 @@
-FROM mbe1224/debian-oracle-java:stretch-slim-jre8
+FROM openjdk:8
 
 RUN apt-get update && apt-get install -y apt-utils && apt-get install -y lib32stdc++6 gcc-multilib procps
 RUN mkdir /required_files
